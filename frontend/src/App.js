@@ -5,9 +5,9 @@ function App() {
   return (
     <div className="main">
       <div className="min-h-screen flex flex-col">
-      <navbar className="flex justify-between py-4 px-2 sm:px-14 items-center">
-        <logo className="font-bold">nullbrains</logo>
-        <navigation className="flex justify-center">
+      <div className="flex justify-between py-4 px-2 sm:px-14 items-center">
+        <div className="font-bold">nullbrains</div>
+        <div className="flex justify-center">
           <a className="px-1 sm:px-4">Home</a>
           <a className="px-1 sm:px-4">Features</a>
           <a className="px-1 sm:px-4">Blog</a>
@@ -15,13 +15,13 @@ function App() {
           <a className="px-1 sm:px-4">Contact</a>
           <a className="px-1 sm:px-4">search</a>
 
-        </navigation>
-        <action className="flex justify-center items-center">
+        </div>
+        <div className="flex justify-center items-center">
           <a className="px-1 sm:px-4">Sign In</a>
           <button className="px-2 sm:px-5 bg-blue-700 text-white rounded-3xl py-1 sm:py-2 text-sm">Sign Up</button>
 
-        </action>
-      </navbar>
+        </div>
+      </div>
       <div className="h-px  bg-gray-300 mx-2 sm:mx-14"> </div>
       <div className="flex-grow flex flex-col justify-center items-center text-center">
         <div className="font-bold text-4xl sm:text-6xl "> 
