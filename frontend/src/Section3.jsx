@@ -5,7 +5,7 @@ import {RiCoupon2Line} from "react-icons/ri"
 export default function Section3(){
 
     return(
-        <div className="min-h-screen flex flex-col px-2 sm:px-14 py-4 sm:py-10 text-center">
+        <div className="min-h-100 sm:min-h-152 flex flex-col px-2 sm:px-14 py-4 sm:py-20 text-center">
             <div className=" text-2xl font-semibold sm:text-3xl">
                 Our Features
             </div>

@@ -45,7 +45,7 @@ export default function Section4(){
 
     ]
     return(
-        <div className="min-h-100 sm:min-h-152 flex flex-col pl-2 py-4 sm:py-6">
+        <div className="min-h-100 sm:min-h-152 flex flex-col pl-2 py-4 sm:pt-6 sm:pb-20">
             <div className="sm:pl-40 text-blue-500 text-sm">
                 OUR TEAM
             </div>
@@ -55,11 +55,11 @@ export default function Section4(){
                 </div>
                 <div className="w-52 sm:w-80 h-16 sm:h-20 bg-blue-50 rounded-l-full"></div>
             </div>
-            <div className="px-2 py-2 sm:py-4 sm:px-40 flex flex-wrap justify-center">
+            <div className="px-2 py-2 sm:py- sm:px-40 flex flex-wrap justify-center">
                 {
                     team.map((person,index)=>{
                         return(
-                            <div key={person.name}className=" w-44 h-50 sm:w-60 sm:h-80 m-2 text-center p-2 sm:my-3">
+                            <div key={person.name}className=" w-44 h-64 sm:w-60 sm:h-80 m-2 text-center p-2 sm:my-3">
                                 <div className={`p-5 ${bgColor[index]} rounded-l-full rounded-br-full`}>
                                     <div className=" rounded-full">
                                         <img src={person.img} className="rounded-full"/>

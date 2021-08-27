@@ -1,5 +1,9 @@
 import {BsSearch} from "react-icons/bs"
+import {AiFillHome} from "react-icons/ai"
+import { useState } from "react"
+
 export default function Section1(){
+    const [modal, setModal] = useState(false)
     const images=[
         "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.53i27HRznOQwZDKbh3DB6QHaHa%26pid%3DApi&f=1",
         "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.n6NgxakoBD2QrrJAD8bOGAHaHa%26pid%3DApi&f=1",
@@ -11,28 +15,55 @@ export default function Section1(){
     ]
     return(
         <>
-        <div className="min-h-100 sm:min-h-152 flex flex-col px-2 sm:px-14">
+        <div className="min-h-152 flex flex-col px-2 sm:px-14">
         <div className="flex justify-between py-4 sm:py-6 items-center flex-wrap">
-          <div className="font-bold text-lg sm:text-xl">nullbrains</div>
-          <div className="flex justify-center items-center">
-            <a className="px-1 sm:px-4">Home</a>
-            <a className="px-1 sm:px-4">Features</a>
-            <a className="px-1 sm:px-4">Blog</a>
-            <a className="px-1 sm:px-4">Contact</a>
-            <a className="px-1 sm:px-4"><BsSearch/></a>
-
+          <div className="font-bold text-lg sm:text-xl cursor-pointer">
+            nullbrains
+          <span className="text-purple-700">.</span>
           </div>
+          <div className="hidden sm:flex justify-center items-center">
+            <a className="px-1 sm:px-4 cursor-pointer">Home</a>
+            <a className="px-1 sm:px-4 cursor-pointer">Features</a>
+            <a className="px-1 sm:px-4 cursor-pointer">Blog</a>
+            <a className="px-1 sm:px-4 cursor-pointer">Contact</a>
+            <a className="px-1 sm:px-4 cursor-pointer"><BsSearch/></a>
+          </div>
+          
           <div className="flex justify-center items-center">
-            <a className="pr-1 sm:pr-4">Sign In</a>
-            <button className="px-2 sm:px-5 bg-blue-700 text-white rounded-3xl py-1 sm:py-2 text-sm">Sign Up</button>
-
+            <a className="pr-1 sm:pr-4 cursor-pointer">Sign In</a>
+            <button className="px-2 sm:px-5 bg-indigo-600 text-white rounded-3xl py-1 sm:py-2 text-sm">Sign Up</button>
+            { !modal &&
+            <div className=" sm:hidden w-5 h-5 mx-2 cursor-pointer" onClick={()=>{setModal(prev=>!prev)}}>
+              
+                <div className="bg-black w-full h-0.5 my-1"></div>
+                <div className="bg-black w-full h-0.5 my-1"></div>
+                <div className="bg-black w-full h-0.5 my-1"></div>
+              
+            </div>
+            }
+            {
+              modal &&
+              <div className="sm: hidden ml-2 cursor-pointer bg-gray-200 px-2" onClick={()=>{setModal(prev=>!prev)}}>x</div>
+            }
+            <div className="fixed flex flex-col -left-8 top-0 h-screen justify-center bg-blue-50 px-4 z-10"
+            style={{width:modal?`max-content`:`0`, left:modal?`0`:`-2rem`, transition:'all 0.5s ease'}}
+                >
+                <div className="flex-col justify-center items-center font-semibold text-lg "
+                  style={{display:modal?`flex`:`none`}}>
+                  <a className="px-3 my-2 sm:px-4 cursor-pointer">Home</a>
+                  <a className="px-3 my-2 sm:px-4 cursor-pointer">Features</a>
+                  <a className="px-3 my-2 sm:px-4 cursor-pointer">Blog</a>
+                  <a className="px-3 my-2 sm:px-4 cursor-pointer">Contact</a>
+                  <a className="px-3 my-2 sm:px-4 cursor-pointer"><BsSearch/></a>
+                </div>
+            </div>
           </div>
         </div>
         <div className="h-px  bg-gray-300"> </div>
         <div className="flex-grow flex flex-col justify-center items-center text-center">
           <div className="font-bold text-4xl sm:text-6xl py-2"> 
             <div className="">Start Crafting Your</div>
-            <div className="text-blue-600">Next Great Idea</div>
+            <div className="text-indigo-600">Next Great Idea</div>
           </div>
           <div className="py-3 sm:py-8 text-xs sm:text-base text-gray-400">
             <div>Simplifying the creation of landing pages, blog pages,
@@ -43,10 +74,10 @@ export default function Section1(){
 
           <div className="flex justify-center py-2 sm:py-3">
             <div className="relative py-2.5 px-4">
-            <button className="relative px-4 py-3 bg-blue-600 rounded-3xl text-white text-sm sm:px-5 font-medium">Purchase Now
+            <button className="relative px-4 py-3 bg-indigo-600 rounded-3xl text-white text-sm sm:px-5 font-medium">Purchase Now
             </button>
-            <button className="absolute top-0 right-0 text-xs bg-green-500 px-1.5 py-px rounded-2xl text-white">only $15/mo</button>
-            <div className="text-gray-400 text-xs text-blue-500 py-2">Learn More</div>
+            <button className="absolute top-0 right-0 bg-green-400 px-1.5 py-px rounded-2xl text-white" style={{fontSize:'0.7rem'}}>only $15/mo</button>
+            <div className="text-gray-400 text-xs text-blue-500 py-2 cursor-pointer">Learn More</div>
             </div>
 
         </div>
