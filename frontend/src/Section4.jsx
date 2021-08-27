@@ -1,4 +1,3 @@
-import designer from "./assets/designer.png"
 import {FaTwitter,FaGithub} from "react-icons/fa"
 export default function Section4(){
     const bgColor=['bg-blue-50', 'bg-green-50', 'bg-red-50', 'bg-green-50', `bg-green-50`, `bg-red-50`, 'bg-indigo-50', 'bg-green-50']
@@ -70,7 +69,7 @@ export default function Section4(){
                                 <div className="text-blue-500">   {person.pos}
                                 </div>
                                 <div className="flex justify-center text-gray-400 text-2xl pt-1">
-                                    <FaTwitter className=" mx-1"/>
+                                    <FaTwitter className="mx-1"/>
                                     <FaGithub className="mx-1"/>
                                     </div>
                             </div>
