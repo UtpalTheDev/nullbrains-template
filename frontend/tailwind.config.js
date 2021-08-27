@@ -4,10 +4,13 @@ module.exports = {
     theme: {
       extend: {
         height:{
-          'h-112':'28rem',
-          'h-104':'26rem',
-          'h-120':'30rem',
-          'h-136':'34rem'
+          112:'28rem',
+          104:'26rem',
+          120:'30rem',
+          136:'34rem'
+        },
+        width:{
+          68:"270px"
         }
       },
     },
