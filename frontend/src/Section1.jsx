@@ -43,7 +43,7 @@ export default function Section1(){
             }
             {
               modal &&
-              <div className="sm: hidden ml-2 cursor-pointer bg-gray-200 px-2" onClick={()=>{setModal(prev=>!prev)}}>x</div>
+              <div className="sm:hidden ml-2 cursor-pointer bg-gray-200 px-2" onClick={()=>{setModal(prev=>!prev)}}>x</div>
             }
             <div className="fixed flex flex-col -left-8 top-0 h-screen justify-center bg-blue-50 px-4 z-10"
             style={{width:modal?`max-content`:`0`, left:modal?`0`:`-2rem`, transition:'all 0.5s ease'}}
