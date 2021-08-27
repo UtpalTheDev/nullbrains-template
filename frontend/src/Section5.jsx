@@ -8,7 +8,7 @@ import resources from "./assets/resources.png"
 export default function Section5(){
 
     return(
-        <div className="min-h-152 flex flex-col px-2 sm:px-40 py-4 sm:py-6">
+        <div className="min-h-152 flex flex-col px-2 sm:px-12 lg:px-40 py-4 sm:py-6">
             <div className="font-bold text-2xl sm:text-4xl pb-2">
                 The Project Blog
             </div>

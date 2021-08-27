@@ -46,10 +46,10 @@ export default function Section4(){
     ]
     return(
         <div className="min-h-100 sm:min-h-152 flex flex-col pl-2 py-4 sm:pt-6 sm:pb-20">
-            <div className="sm:pl-40 text-blue-500 text-sm">
+            <div className="sm:px-12 lg:pl-40 text-blue-500 text-sm">
                 OUR TEAM
             </div>
-            <div className="flex justify-between sm:pl-40 ">
+            <div className="flex justify-between sm:pl-12 lg:pl-40 ">
                 <div className="text-xl font-medium sm:text-3xl max-w-sm self-end pr-2">
                     An Incredible Team of amazing individuals
                 </div>
