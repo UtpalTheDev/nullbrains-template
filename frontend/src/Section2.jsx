@@ -3,7 +3,7 @@ import boost_productivity from "./assets/boost_productivity.png"
 export default function Section2(){
 
     return(
-        <div className="min-h-screen flex flex-col px-2 sm:px-14 py-4 sm:py-6">
+        <div className="min-h-100 sm:min-h-152 flex flex-col px-2 sm:px-14 py-4 sm:py-6">
             <div className="flex items-center justify-center py-4 sm:py-0">
                 <div className="flex justify-center items-center max-w-md hidden sm:flex sm:mx-8">
                 <img src={boost_productivity} alt="img" className="w-full"/>

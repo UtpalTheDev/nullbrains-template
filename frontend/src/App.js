@@ -10,7 +10,7 @@ function App() {
 
 
   return (
-    <div className="main">
+    <div className="App">
       <Section1/>
       <Section2/>
       <Section3/>

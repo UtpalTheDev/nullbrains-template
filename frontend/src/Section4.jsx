@@ -45,17 +45,17 @@ export default function Section4(){
 
     ]
     return(
-        <div className="min-h-screen flex flex-col pl-2 py-4 sm:py-6">
-            <div className="sm:pl-14 text-blue-500 text-sm">
+        <div className="min-h-100 sm:min-h-152 flex flex-col pl-2 py-4 sm:py-6">
+            <div className="sm:pl-40 text-blue-500 text-sm">
                 OUR TEAM
             </div>
-            <div className="flex justify-between sm:pl-14 ">
+            <div className="flex justify-between sm:pl-40 ">
                 <div className="text-xl font-medium sm:text-3xl max-w-sm self-end pr-2">
                     An Incredible Team of amazing individuals
                 </div>
-                <div className="w-52 sm:w-80 h-16 bg-green-50 rounded-l-full"></div>
+                <div className="w-52 sm:w-80 h-16 sm:h-20 bg-blue-50 rounded-l-full"></div>
             </div>
-            <div className="px-2 sm:px-14 flex flex-wrap justify-center">
+            <div className="px-2 py-2 sm:py-4 sm:px-40 flex flex-wrap justify-center">
                 {
                     team.map((person,index)=>{
                         return(
@@ -68,7 +68,7 @@ export default function Section4(){
                                 <div className="pt-2">{person.name}</div>
                                 <div className="text-blue-500">   {person.pos}
                                 </div>
-                                <div className="flex justify-center text-gray-400 text-2xl pt-1">
+                                <div className="flex justify-center text-gray-300 text-2xl pt-1">
                                     <FaTwitter className="mx-1"/>
                                     <FaGithub className="mx-1"/>
                                     </div>

@@ -11,7 +11,7 @@ export default function Section1(){
     ]
     return(
         <>
-        <div className="min-h-screen flex flex-col px-2 sm:px-14">
+        <div className="min-h-100 sm:min-h-152 flex flex-col px-2 sm:px-14">
         <div className="flex justify-between py-4 sm:py-6 items-center flex-wrap">
           <div className="font-bold text-lg sm:text-xl">nullbrains</div>
           <div className="flex justify-center items-center">
@@ -19,12 +19,11 @@ export default function Section1(){
             <a className="px-1 sm:px-4">Features</a>
             <a className="px-1 sm:px-4">Blog</a>
             <a className="px-1 sm:px-4">Contact</a>
-            <a className="px-1 sm:px-4">Contact</a>
             <a className="px-1 sm:px-4"><BsSearch/></a>
 
           </div>
           <div className="flex justify-center items-center">
-            <a className="px-1 sm:px-4">Sign In</a>
+            <a className="pr-1 sm:pr-4">Sign In</a>
             <button className="px-2 sm:px-5 bg-blue-700 text-white rounded-3xl py-1 sm:py-2 text-sm">Sign Up</button>
 
           </div>
@@ -59,14 +58,17 @@ export default function Section1(){
         <div className="text-xs sm:text-base font-medium text-center">Trusted By Top-Leading Companies
         </div>
         
-        <div className="flex sm:justify-center py-2 overflow-x-auto">
-          {
-            images.map(item=>{
-              return(
-                <img src={item} key={item} alt="logo" className="h-16 px-2 sm:h-28"/>
-              )
-            })
-          }
+        <div className="flex justify-center py-2 ">
+          <div className="flex overflow-x-auto sm:w-15">
+            {
+              images.map(item=>{
+                return(
+                  <img src={item} key={item} alt="logo" className="h-16 px-2 sm:h-28"/>
+                )
+              })
+            }
+          </div>
+         
         </div>
       </div>
       </>

@@ -8,14 +8,14 @@ import resources from "./assets/resources.png"
 export default function Section5(){
 
     return(
-        <div className="min-h-screen flex flex-col px-2 sm:px-14 py-4 sm:py-6">
-            <div className="font-bold text-2xl sm:text-4xl">
+        <div className="min-h-100 sm:min-h-152 flex flex-col px-2 sm:px-40 py-4 sm:py-6">
+            <div className="font-bold text-2xl sm:text-4xl pb-2">
                 The Project Blog
             </div>
             <div className="text-gray-500">
                 Design and layouts to help you with your app.
             </div>
-            <div className="flex flex-wrap justify-center pt-6 sm:pt-16 items-end">
+            <div className="flex flex-wrap justify-center pt-6 sm:pt-8 items-end">
                 <div className="w-68 bg-gray-300 rounded-b-md m-2 bg-purple-500 sm:m-5" style={{minHeight:'26rem'}}>
                  <div className="relative">
                     <img src={glass}/>
@@ -68,7 +68,7 @@ export default function Section5(){
                 <div className="w-70 min-h-64 bg-white rounded-xl border border-gray-200 m-2 sm:m-3">
                     <div>
                         <div className="relative">
-                           <img src={inspiration} className="rounded-t-xl" style={{height:"157px"}}/>
+                           <img src={inspiration} className="rounded-t-xl w-full" style={{height:"157px"}}/>
                            <div className=" absolute bg-indigo-400 px-3 py-1.5 text-xs -bottom-3.5 left-4 rounded-2xl text-white ">
                               INSPIRATION
                             </div>
@@ -87,7 +87,7 @@ export default function Section5(){
                 <div className="w-70 min-h-64 bg-white rounded-xl border border-gray-200 m-2 sm:m-3">
                     <div>
                         <div className="relative">
-                           <img src={food} className="rounded-t-xl" style={{height:"157px"}}/>
+                           <img src={food} className="rounded-t-xl w-full" style={{height:"157px"}}/>
                            <div className=" absolute bg-red-400 px-3 py-1.5 text-xs -bottom-3.5 left-4 rounded-2xl text-white ">
                               FOOD
                             </div>
@@ -106,7 +106,7 @@ export default function Section5(){
                 <div className="w-70 min-h-64 bg-white rounded-xl border border-gray-200 m-2 sm:m-3">
                     <div>
                         <div className="relative">
-                           <img src={resources} className="rounded-t-xl" style={{height:"157px"}}/>
+                           <img src={resources} className="rounded-t-xl w-full" style={{height:"157px"}}/>
                            <div className=" absolute bg-purple-500 px-3 py-1.5 text-xs -bottom-3.5 left-4 rounded-2xl text-white ">
                               RESOURCES
                             </div>
