@@ -10,7 +10,11 @@ module.exports = {
           136:'34rem'
         },
         width:{
-          68:"270px"
+          68:"270px",
+          70:"280px"
+        },
+        minHeight:{
+          64:'16rem'
         }
       },
     },

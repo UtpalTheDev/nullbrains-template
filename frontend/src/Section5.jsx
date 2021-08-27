@@ -1,6 +1,10 @@
 import glass from "./assets/glass.png"
 import game from "./assets/game.png"
 import orange from "./assets/orange.png"
+import inspiration from "./assets/inspiration.png"
+import food from "./assets/food.png"
+import resources from "./assets/resources.png"
+
 export default function Section5(){
 
     return(
@@ -12,7 +16,7 @@ export default function Section5(){
                 Design and layouts to help you with your app.
             </div>
             <div className="flex flex-wrap justify-center pt-6 sm:pt-16 items-end">
-                <div className="w-68 bg-gray-300 rounded-b-md m-2 bg-purple-500 sm:m-3" style={{minHeight:'26rem'}}>
+                <div className="w-68 bg-gray-300 rounded-b-md m-2 bg-purple-500 sm:m-5" style={{minHeight:'26rem'}}>
                  <div className="relative">
                     <img src={glass}/>
                     <div className=" absolute bg-white px-3 py-1.5 text-xs -bottom-3.5 left-4 rounded-2xl text-purple-500">
@@ -28,7 +32,7 @@ export default function Section5(){
                  </div>
                 </div>
                 
-                <div className="w-68 bg-gray-300 rounded-md m-2 bg-blue-400 sm:m-3" style={{minHeight:'28rem'}}>
+                <div className="w-68 bg-gray-300 rounded-md m-2 bg-blue-400 sm:m-5" style={{minHeight:'28rem'}}>
                  <div className="relative">
                     <img className="rounded-t-md"src={orange}/>
                     <div className=" absolute bg-white px-3 py-1.5 text-xs -bottom-3.5 left-4 rounded-2xl text-blue-400">
@@ -43,7 +47,7 @@ export default function Section5(){
                      Living a healthier lifestyle will help with your productivity and your mind-set.
                  </div>
                 </div>
-                <div className="w-68 bg-gray-300 rounded-b-md m-2 bg-yellow-400 sm:m-3" style={{minHeight:'26rem'}}>
+                <div className="w-68 bg-gray-300 rounded-b-md m-2 bg-yellow-400 sm:m-5" style={{minHeight:'26rem'}}>
                  <div className="relative">
                     <img src={game}/>
                     <div className=" absolute bg-white px-3 py-1.5 text-xs -bottom-3.5 left-4 rounded-2xl text-yellow-400">
@@ -61,9 +65,61 @@ export default function Section5(){
                 </div>
             </div>
             <div className="flex flex-wrap justify-center">
-                <div className="w-68 h-56 bg-gray-300">
+                <div className="w-70 min-h-64 bg-white rounded-xl border border-gray-200 m-2 sm:m-3">
                     <div>
-                        <img src="https://images.unsplash.com/photo-1583058905141-deef2de746bb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjA2fHxwZW9wbGV8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"/>
+                        <div className="relative">
+                           <img src={inspiration} className="rounded-t-xl" style={{height:"157px"}}/>
+                           <div className=" absolute bg-indigo-400 px-3 py-1.5 text-xs -bottom-3.5 left-4 rounded-2xl text-white ">
+                              INSPIRATION
+                            </div>
+                        </div>
+                        <div className="pt-5 px-4">
+                            <div className="font-bold sm:text-md">
+                                Best Workstations of the Year
+                            </div>
+                            <div className="text-xs text-gray-400 pb-3 pt-1">
+                                Check out these inspiring workstations to get ideas on how to level-up your workstation.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div className="w-70 min-h-64 bg-white rounded-xl border border-gray-200 m-2 sm:m-3">
+                    <div>
+                        <div className="relative">
+                           <img src={food} className="rounded-t-xl" style={{height:"157px"}}/>
+                           <div className=" absolute bg-red-400 px-3 py-1.5 text-xs -bottom-3.5 left-4 rounded-2xl text-white ">
+                              FOOD
+                            </div>
+                        </div>
+                        <div className="pt-5 px-4">
+                            <div className="font-bold sm:text-md">
+                                Eating for Productivity
+                            </div>
+                            <div className="text-xs text-gray-400 pb-3 pt-1">
+                                Learn how to be more disciplined in your diet and how you can eat to maximize productivity.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div className="w-70 min-h-64 bg-white rounded-xl border border-gray-200 m-2 sm:m-3">
+                    <div>
+                        <div className="relative">
+                           <img src={resources} className="rounded-t-xl" style={{height:"157px"}}/>
+                           <div className=" absolute bg-purple-500 px-3 py-1.5 text-xs -bottom-3.5 left-4 rounded-2xl text-white ">
+                              RESOURCES
+                            </div>
+                        </div>
+                        <div className="pt-5 px-4">
+                            <div className="font-bold sm:text-md">
+                                A Design Mind-set
+                            </div>
+                            <div className="text-xs text-gray-400 pb-3 pt-1">
+                                What does it mean to have a design mind-set? Learn how to improve your eye for design.
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
