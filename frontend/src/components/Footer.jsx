@@ -3,7 +3,7 @@ import {FaFacebook, FaInstagram, FaTwitter, FaGithub, FaBasketballBall} from "re
 export function Footer(){
 
     return(
-        <div className="flex flex-col px-2 sm:px-14 py-4 sm:py-6 items-center">
+        <div id="footer" className="flex flex-col px-2 sm:px-14 py-4 sm:py-6 items-center">
             <div className="flex flex-wrap text-gray-400">
                 <a className=" m-2 sm:mx-3">About</a>
                 <a className=" m-2 sm:mx-3">Blog</a>

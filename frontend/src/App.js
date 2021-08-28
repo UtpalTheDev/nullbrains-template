@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {Hero, Details, Feature,Team, Blog, Footer} from './components';
+import {Hero, Details, Feature,Team, Blog, Footer, Navbar} from './components';
 
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar/>
       <Hero/>
       <Details/>
       <Feature/>

@@ -30,7 +30,7 @@ export function Blog(){
     const blogs2Img=[inspiration,food, resources]
 
     return(
-        <div className="min-h-152 flex flex-col px-2 sm:px-12 lg:px-40 py-4 sm:py-6">
+        <div id="blog" className="min-h-152 flex flex-col px-2 sm:px-12 lg:px-40 py-4 sm:py-6">
             <div className="font-bold text-2xl sm:text-4xl pb-2">
                 The Project Blog
             </div>

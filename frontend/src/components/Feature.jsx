@@ -37,7 +37,7 @@ export function Feature(){
         }
     ]
     return(
-        <div className="min-h-100 sm:min-h-152 flex flex-col px-2 sm:px-12 py-4 sm:py-20 text-center">
+        <div id="feature" className="min-h-100 sm:min-h-152 flex flex-col px-2 sm:px-12 py-4 sm:py-20 text-center">
             <div className=" text-2xl font-semibold sm:text-3xl">
                 Our Features
             </div>
