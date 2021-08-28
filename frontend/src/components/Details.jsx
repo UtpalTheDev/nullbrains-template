@@ -1,6 +1,7 @@
-import automated_tasks from "./assets/automated_tasks.png"
-import boost_productivity from "./assets/boost_productivity.png"
-export default function Section2(){
+import automated_tasks from "../assets/automated_tasks.png"
+import boost_productivity from "../assets/boost_productivity.png"
+
+export function Details(){
 
     return(
         <div className="min-h-100 sm:min-h-152 flex flex-col px-2 sm:px-14 py-4 sm:py-6">

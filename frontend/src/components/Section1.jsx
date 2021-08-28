@@ -1,8 +1,7 @@
 import {BsSearch} from "react-icons/bs"
-import {AiFillHome} from "react-icons/ai"
 import { useState } from "react"
 
-export default function Section1(){
+export function Hero(){
     const [modal, setModal] = useState(false)
     const images=[
         "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.53i27HRznOQwZDKbh3DB6QHaHa%26pid%3DApi&f=1",
@@ -43,7 +42,7 @@ export default function Section1(){
             }
             {
               modal &&
-              <div className="sm:hidden ml-2 cursor-pointer bg-gray-200 px-2" onClick={()=>{setModal(prev=>!prev)}}>x</div>
+              <div className="sm:hidden ml-2 cursor-pointer bg-gray-200 px-2 w-7 h-7 flex justify-center items-center" onClick={()=>{setModal(prev=>!prev)}}><span>x</span></div>
             }
             <div className="fixed flex flex-col -left-8 top-0 h-screen justify-center bg-blue-50 px-4 z-10"
             style={{width:modal?`max-content`:`0`, left:modal?`0`:`-2rem`, transition:'all 0.5s ease'}}

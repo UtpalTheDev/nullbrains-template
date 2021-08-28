@@ -1,5 +1,6 @@
 import {FaFacebook, FaInstagram, FaTwitter, FaGithub, FaBasketballBall} from "react-icons/fa"
-export default function Section6(){
+
+export function Footer(){
 
     return(
         <div className="flex flex-col px-2 sm:px-14 py-4 sm:py-6 items-center">

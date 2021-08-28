@@ -1,5 +1,6 @@
 import {FaTwitter,FaGithub} from "react-icons/fa"
-export default function Section4(){
+
+export function Team(){
     const bgColor=['bg-blue-50', 'bg-green-50', 'bg-red-50', 'bg-green-50', `bg-green-50`, `bg-red-50`, 'bg-indigo-50', 'bg-green-50']
     const team=[
         {

@@ -1,0 +1,6 @@
+export {Hero} from "./Section1"
+export {Details} from "./Details"
+export {Feature} from "./Feature"
+export {Team} from "./Team"
+export {Blog} from "./Blog"
+export {Footer} from "./Footer"
