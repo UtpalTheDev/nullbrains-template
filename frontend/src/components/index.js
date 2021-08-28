@@ -1,4 +1,4 @@
-export {Hero} from "./Section1"
+export {Hero} from "./Hero"
 export {Details} from "./Details"
 export {Feature} from "./Feature"
 export {Team} from "./Team"
