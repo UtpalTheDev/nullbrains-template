@@ -61,7 +61,7 @@ export function Details(){
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-center items-center    max-w-sm hidden sm:flex sm:mx-8">
+                <div className="flex justify-center items-center max-w-sm hidden sm:flex sm:mx-8">
                    <img src={automated_tasks} alt="img" className="w-full"/>
                 </div>
             </div> 

@@ -70,8 +70,8 @@ export function Team(){
                                 <div className="text-blue-500">   {person.pos}
                                 </div>
                                 <div className="flex justify-center text-gray-300 text-2xl pt-1">
-                                    <FaTwitter className="mx-1"/>
-                                    <FaGithub className="mx-1"/>
+                                    <FaTwitter className="mx-1 cursor-pointer"/>
+                                    <FaGithub className="mx-1 cursor-pointer"/>
                                     </div>
                             </div>
                         )
